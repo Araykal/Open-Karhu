@@ -1,0 +1,11 @@
+name: KarhuAC
+version: 2.0-PRE
+main: me.liwk.karhu.Karhu
+api-version: 1.13
+softdepend: [Viaversion, ProtocolLib, ProtocolSupport]
+load: POSTWORLD
+permissions:
+  karhu.staff:
+    default: op
+  karhu.bypass:
+    default: op

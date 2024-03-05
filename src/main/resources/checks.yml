@@ -1,0 +1,181 @@
+COMBAT:
+  AutoClicker:
+    A:
+      enabled: true
+      autoban: true
+      max-cps: 25
+    B:
+      enabled: true
+      autoban: true
+    C:
+      enabled: true
+      autoban: true
+    D:
+      enabled: true
+      autoban: true
+    E:
+      enabled: true
+      autoban: true
+    F:
+      enabled: true
+      autoban: true
+    G:
+      enabled: true
+      autoban: true
+    H:
+      enabled: true
+      autoban: true
+    I:
+      enabled: true
+      autoban: true
+    J:
+      enabled: true
+      autoban: true
+    K:
+      enabled: true
+      autoban: true
+    L:
+      enabled: true
+      autoban: true
+    M:
+      enabled: true
+      autoban: true
+    N:
+      enabled: true
+      autoban: true
+  Velocity:
+    A:
+      enabled: true
+      autoban: true
+    B:
+      enabled: true
+      autoban: true
+  Reach:
+    A:
+      enabled: true
+      autoban: true
+  AimAssist:
+    A:
+      enabled: true
+      autoban: true
+    B:
+      enabled: true
+      autoban: true
+    C:
+      enabled: true
+      autoban: true
+    D:
+      enabled: true
+      autoban: true
+    E:
+      enabled: true
+      autoban: true
+    F:
+      enabled: true
+      autoban: true
+    G:
+      enabled: true
+      autoban: true
+  Killaura:
+    A:
+      enabled: true
+      autoban: true
+    B:
+      enabled: true
+      autoban: true
+    C:
+      enabled: true
+      autoban: true
+    D:
+      enabled: true
+      autoban: true
+    E:
+      enabled: true
+      autoban: true
+    F:
+      enabled: true
+      autoban: true
+    G:
+      enabled: true
+      autoban: true
+MOVEMENT:
+  Fly:
+    A:
+      enabled: true
+      autoban: true
+    B:
+      enabled: true
+      autoban: true
+    C:
+      enabled: true
+      autoban: true
+  Move:
+    A:
+      enabled: true
+      autoban: true
+  Motion:
+    A:
+      enabled: true
+      autoban: true
+    B:
+      enabled: true
+      autoban: true
+    C:
+      enabled: true
+      autoban: true
+    D:
+      enabled: true
+      autoban: true
+  OmniSprint:
+    A:
+      enabled: true
+      autoban: true
+  Speed:
+    A:
+      enabled: true
+      autoban: true
+PACKET:
+  BadPackets:
+    A:
+      enabled: true
+      autoban: true
+    B:
+      enabled: true
+      autoban: true
+    C:
+      enabled: true
+      autoban: true
+    D:
+      enabled: true
+      autoban: true
+    E:
+      enabled: true
+      autoban: true
+    F:
+      enabled: true
+      autoban: true
+  Timer:
+    A:
+      enabled: true
+      autoban: true
+WORLD:
+  Ground:
+    A:
+      enabled: true
+      autoban: true
+    B:
+      enabled: true
+      autoban: true
+  Scaffold:
+    A:
+      enabled: true
+      autoban: true
+    B:
+      enabled: true
+      autoban: true
+    C:
+      enabled: true
+      autoban: true
+    D:
+      enabled: true
+      autoban: true

@@ -1,0 +1,204 @@
+
+#  _  __          _____  _    _ _    _ 
+# | |/ /    /   |  __ | |  | | |  | |
+# | ' /    /    | |__) | |__| | |  | |
+# |  <    / /  |  _  /|  __  | |  | |
+# | .   / ____ | |  | |  | | |__| |
+# |_|_/_/    __|  __|  |_|____/ 
+#♡ Thanks for purchasing Karhu anti-cheat                       
+#Website: https://www.karhu.cc
+#Discord: https://www.karhu.cc/discord
+#     
+#     
+#Start by adding your license key here!   
+#You can get your license from your email
+#It should look like this: 51D43-7CABC-E8F60-21982-6FFFF
+#ShoppyID / OrderID IS NOT your license!
+license-key: ''
+version-to-download: 'autoupdate'
+Prefix: '&7[&b&l❀&7] '
+MiscPrefix: '&7[&e⚠&7] '
+experimental-alert-symbol: '&aΔ'
+AlertsMessage: '&f%player% &7failed to &b%check% &7[x&b%vl%&7]'
+ClientCheckMessage: '&f%player% &7joined using &7[&e%brand%&7]'
+AntiCrashMessage: '&e%player% &fwas kicked for &esuspicious activity &7(&e%debug%&7)'
+NetHandlerMessage: '&e%player% &fwas kicked for &esuspicious network activity &7(&6%debug%&7)'
+VehicleHandlerMessage: '&f%player% &7sent a vehicle packet in an invalid state'
+
+#The configuration for the hover message on an alert
+AlertsHoverableMessage: |-
+    &f%info%
+    (Ping: %ping% TPS: %tps%) &a(Click to teleport)
+
+#Change Karhu's default "blue" highlight color to your liking.
+AlertsHoverableMessageHighlightColor: '&b'
+GuiHighlightColor: '&l&b'
+
+AlertsClickCommand:
+    command: '/tp %player%'
+
+spigot-api-alert: true #Set this to false if u get errors and cant see alerts
+
+hoverless-alert: false #Set this to true if u get errors and cant see alerts
+
+#Delay between alert 50 = 50ms = 1 tick in minecraft
+alert-delay: 50
+
+#The ban message when a ban is placed
+#Disable this, if you use ban plugin like
+#Litebans, which broadcast ban itself. 
+Punishments:
+    broadcast: true
+    message: |-
+        &7&m--------------------------------------------------
+        &c&l✗ &b&lKARHU CHEAT DETECTION
+        &fKarhu &7has removed a player from the network due to cheating
+        &7&m--------------------------------------------------
+
+#The punish command, don't put ("/")
+PunishCommand:
+    - ban %player% Hacked client
+
+server-name: 'Karhu'
+
+#< SETTING VALUES START > ( CAN BE MODIFIED FROM GUI INGAME )
+#Enables auto-banning
+autoban: false
+
+bungee:
+  execute-ban-command-in-bungee: false
+  alerts: false
+  alert-post-vl-rate: 10 #now it posts to bungee at 10, 20, 30, 40.... vls
+  
+#Anticrash
+anticrash:
+    enabled: true
+    move-spam: true
+    place-spam: true
+    large-move: true
+    window-spam: true
+    payload-spam: true
+    slot-spam: true
+    arm-spam: true
+    kick-message: 'java.net.IOException Connection timed out: no further information'
+
+#NetHandles, prevents transaction delaying / cancelling
+nethandler:
+    enabled: true
+    spoof: true
+    delay: true
+    kick-message: 'java.net.IOException Connection timed out: no further information'
+
+vehicle-handler:
+    unmount: false
+    
+unallowed-brands: #This is case sensitive
+    brands: |-
+        Vivecraft
+        Crystalware
+    kick-msg: 'This client is unallowed on our server!'
+
+#Pullback:
+pullback: true
+
+#Broadcasts players client on join if enabled
+client-check: true
+
+#Allows a player to bypass auto-ban's with permission "karhu.bypass"
+bypass-permission: false
+#< SETTING VALUES END >
+
+#Rename anticheat >_<
+anticheat-name: 'Karhu'
+
+anti-vpn:
+    enabled: true
+    proxy-check: true
+    malicious-check: true
+    bypass:
+      - UUID1
+      - UUID2
+    kick-message: |-
+      &3&l✧ &b&lKarhu &3&l✧
+  
+      &cUsage of VPN is prohibited!
+
+#Get Discord webhook alerts
+discord:
+    enabled: false
+    alert-webhook-url: 'INSERT_HERE'
+    crash-webhook-url: 'INSERT_HERE'
+    show-world: true
+    show-statistics: true # Show players ping + server tps
+    show-icon-thumbnail: true
+    post-vl-rate: 10 #now it posts to discord at 10, 20, 30, 40.... vls
+
+
+high-ping-kick:
+    enabled: false
+    max-ping: 1000
+    ping-over-max-ticks-before-kick: 250
+    kick-message: 'Your ping constantly too high, do something'
+
+packetevents:
+  injectAsync: true
+  ejectAsync: true
+  injectEarly: true
+
+
+
+commands:
+  alerts:
+    enabled: '&b&lKARHU &7// &aAlerts on!'
+    disabled: '&b&lKARHU &7// &cAlerts off!'
+  help: |-
+    &3&l> &b&lKarhu &3&l<
+
+    &b* &7/karhu alerts - check alerts
+    &b* &7/karhu GUI - use GUI
+    &b* &7/karhu logs - check logs from database
+    &b* &7/karhu pastelogs - paste all logs to hastebin
+    &b* &7/karhu recentbans - view recentbans
+    &b* &7/karhu manualban - ban cheater manually
+    &b* &7/karhu stats - view server Timings
+    &b* &7/karhu sessionlogs - check logs that havent expired yet in the vl system
+    &b* &7/karhu info <player> - see info about player
+    &b* &7/karhu version - check Karhu version
+    &b* &7/karhu reload - reload config
+  banwave: |-
+    &3&l> &b&lKarhu &3&l<
+
+    &b* &7/karhu banwave gui - open management gui
+    &b* &7/karhu banwave list - see players that will be banned
+  logs:
+    ban-color: '&c'
+    highlight-color: '&b'
+
+
+default-version: '1_8' #only change if you have 1.7.10 spigot - 1.7.10 spigot = default-version: '1_7'
+
+database: 'FlatFile' #MySQL. MongoDB, FlatFile
+
+#Leave these empty if you use mongodb/flatfile
+#If you are new to databases, we suggest you
+#to use MongoDB instead mysql. Its easier to use :)
+mysql:                    
+    user: karhu           
+    address: localhost    
+    password: karhubest   
+    database: KarhuAC     
+    port: 3306            
+
+#Leave these empty if you use mysql/flatfile
+#You can use 'port' 21982 for debug purposes.
+#If you have problems connection to MongoDB, please
+#read their docs before contacting us! :)
+mongo:                   
+    host: 127.0.0.1       
+    port: 27017           
+    database: 'Karhu'     
+    authentication:       
+        enabled: false
+        username: 'Karhu'
+        password: 'karhubest'
+   
