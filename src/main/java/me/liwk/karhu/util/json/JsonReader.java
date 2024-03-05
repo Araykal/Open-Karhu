@@ -48,7 +48,7 @@ public class JsonReader {
 		request.setRequestMethod("POST");
 		request.addRequestProperty("User-Agent", "KarhuAC");
 		request.addRequestProperty("content-type", "application/json");
-		request.addRequestProperty("Authorization", "gdY2P44WZtacyQQ4xmefvZxhUX6YcZEhmv6XEkA6");
+		request.addRequestProperty("Authorization", "");
 		request.setReadTimeout(10000);
 		request.connect();
 		JsonObject json = new JsonObject();
