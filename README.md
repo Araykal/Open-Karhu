@@ -4,4 +4,6 @@
 * website: [Karhu](https://karhu.ac)
 ## Downloads
 **[Releases](https://github.com/Araykal/Open-Karhu/releases)** Download.
-
+## thanks
+* [ImFl0wow](https://github.com/ImFl0wow)
+* [Nuym](https://github.com/nuym)
