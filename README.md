@@ -1,3 +1,6 @@
+**WARNING**
+- This was built from nuym's repo, decompiled and then reduced to source, so the project is more confusing because he went through two decodes
+
 ## The original dump project
 - [Originnal Repo](https://github.com/nuym/Open-Karhu)
 - You can see all the commit in this repo,even the original dump classes
