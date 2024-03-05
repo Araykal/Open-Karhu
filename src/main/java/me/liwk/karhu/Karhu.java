@@ -103,6 +103,7 @@ public final class Karhu extends JavaPlugin {
 	private final LegacyComponentSerializer componentSerializer = LegacyComponentSerializer.builder().character('&').hexCharacter('#').build();
 
 	public void onEnable() {
+		Bukkit.getScheduler().runTaskLater(this, () -> {
 			long enable = System.nanoTime();
 			instance = this;
 			this.plugin = this;
@@ -268,6 +269,7 @@ public final class Karhu extends JavaPlugin {
 				Bukkit.getServer().getScheduler().cancelTasks(this.plugin);
 				Bukkit.getPluginManager().disablePlugin(this.plugin);
 			}
+		},15);
 	}
 
 	public void onDisable() {
