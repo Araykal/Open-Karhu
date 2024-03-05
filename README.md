@@ -1,4 +1,7 @@
-# 
+## The original dump project
+- [Originnal Repo](https://github.com/nuym/Open-Karhu)
+- You can see all the commit in this repo,even the original dump classes
+
 ## Karhu Anti Cheat ##
 **The project from the mysterious person to provide the Jar decompiled open source!**
 
@@ -10,9 +13,7 @@
 ## Downloads
 **[Releases](https://github.com/Araykal/Open-Karhu/releases)** Download.'
 
-## The original dump project
-- [Originnal Repo](https://github.com/nuym/Open-Karhu)
-- You can see all the commit in this repo,even the original dump classes
+
 
 ## Special Thanks
 - [Karhu](https://www.karhu.ac/) developed this anti cheat
