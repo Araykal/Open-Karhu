@@ -1,6 +1,6 @@
 ## Karhu Anti Cheat ##
 **The project from the mysterious person to provide the Jar decompiled open source!**
-
+new dump is working ～
 
 **The source code for will not use please look at the individual iq This source code does not have any problem if iq not please download the Release version**
 
