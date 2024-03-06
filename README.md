@@ -10,6 +10,8 @@ new dump is working ～
 ## Downloads
 **[Releases](https://github.com/Araykal/Open-Karhu/releases)** Download.'
 
+## The original dump project
+- [Originnal Repo](https://github.com/nuym/Open-Karhu)
 ## Special Note
 
 Our main purpose for open sourcing this project is to help people deeply understand the unique checks and measures Karhu takes against cheaters. We do not intend to sell, reuse or profit in any way from Karhu’s code.
