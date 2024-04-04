@@ -1,181 +1,891 @@
 COMBAT:
-  AutoClicker:
-    A:
-      enabled: true
-      autoban: true
-      max-cps: 25
-    B:
-      enabled: true
-      autoban: true
-    C:
-      enabled: true
-      autoban: true
-    D:
-      enabled: true
-      autoban: true
-    E:
-      enabled: true
-      autoban: true
-    F:
-      enabled: true
-      autoban: true
-    G:
-      enabled: true
-      autoban: true
-    H:
-      enabled: true
-      autoban: true
-    I:
-      enabled: true
-      autoban: true
-    J:
-      enabled: true
-      autoban: true
-    K:
-      enabled: true
-      autoban: true
-    L:
-      enabled: true
-      autoban: true
-    M:
-      enabled: true
-      autoban: true
-    N:
-      enabled: true
-      autoban: true
-  Velocity:
-    A:
-      enabled: true
-      autoban: true
-    B:
-      enabled: true
-      autoban: true
-  Reach:
-    A:
-      enabled: true
-      autoban: true
-  AimAssist:
-    A:
-      enabled: true
-      autoban: true
-    B:
-      enabled: true
-      autoban: true
-    C:
-      enabled: true
-      autoban: true
-    D:
-      enabled: true
-      autoban: true
-    E:
-      enabled: true
-      autoban: true
-    F:
-      enabled: true
-      autoban: true
-    G:
-      enabled: true
-      autoban: true
-  Killaura:
-    A:
-      enabled: true
-      autoban: true
-    B:
-      enabled: true
-      autoban: true
-    C:
-      enabled: true
-      autoban: true
-    D:
-      enabled: true
-      autoban: true
-    E:
-      enabled: true
-      autoban: true
-    F:
-      enabled: true
-      autoban: true
-    G:
-      enabled: true
-      autoban: true
+    AutoClicker:
+        A:
+            enabled: true
+            autoban: true
+            max-cps: 25
+            punish-vl: 20
+            mode: BAN
+            banwave: false
+            banwave-vl: 10
+        B:
+            enabled: true
+            autoban: true
+            punish-vl: 30
+            mode: KICK
+            banwave: false
+            banwave-vl: 10
+        C:
+            enabled: true
+            autoban: true
+            punish-vl: 20
+            mode: BAN
+            banwave: false
+            banwave-vl: 10
+        D:
+            enabled: true
+            autoban: true
+            punish-vl: 30
+            mode: KICK
+            banwave: false
+            banwave-vl: 10
+        E:
+            enabled: true
+            autoban: true
+            punish-vl: 30
+            mode: KICK
+            banwave: false
+            banwave-vl: 10
+        F:
+            enabled: true
+            autoban: true
+            punish-vl: 30
+            mode: KICK
+            banwave: false
+            banwave-vl: 10
+        G:
+            enabled: true
+            autoban: true
+            punish-vl: 20
+            mode: BAN
+            banwave: false
+            banwave-vl: 10
+        H:
+            enabled: true
+            autoban: true
+            punish-vl: 30
+            mode: KICK
+            banwave: false
+            banwave-vl: 10
+        I:
+            enabled: true
+            autoban: true
+        J:
+            enabled: true
+            autoban: true
+        K:
+            enabled: true
+            autoban: true
+        L:
+            enabled: true
+            autoban: true
+            punish-vl: 20
+            mode: BAN
+            banwave: false
+            banwave-vl: 10
+        M:
+            enabled: true
+            autoban: true
+        N:
+            enabled: true
+            autoban: true
+        P:
+            enabled: false
+            autoban: false
+            punish-vl: 30
+            mode: KICK
+            banwave: false
+            banwave-vl: 10
+        U:
+            enabled: false
+            autoban: false
+            punish-vl: 30
+            mode: KICK
+            banwave: false
+            banwave-vl: 10
+        W:
+            enabled: false
+            autoban: false
+            punish-vl: 30
+            mode: KICK
+            banwave: false
+            banwave-vl: 10
+    Velocity:
+        A:
+            enabled: true
+            autoban: true
+            punish-vl: 20
+            mode: BAN
+            banwave: false
+            banwave-vl: 10
+        B:
+            enabled: true
+            autoban: true
+            punish-vl: 20
+            mode: BAN
+            banwave: false
+            banwave-vl: 10
+    Reach:
+        A:
+            enabled: true
+            autoban: true
+            cancel-reach-hits: false
+            reach-to-flag: 3.01
+            buffer: 1.5
+            decay-per-miss: 0.01
+            safe-mode: false
+            remove-triple-hits: true
+            punish-vl: 20
+            mode: BAN
+            banwave: false
+            banwave-vl: 10
+    AimAssist:
+        A:
+            enabled: true
+            autoban: true
+            punish-vl: 20
+            mode: BAN
+            banwave: false
+            banwave-vl: 10
+        B:
+            enabled: true
+            autoban: true
+            punish-vl: 20
+            mode: BAN
+            banwave: false
+            banwave-vl: 10
+        C:
+            enabled: true
+            autoban: true
+            punish-vl: 30
+            mode: KICK
+            banwave: false
+            banwave-vl: 10
+        D:
+            enabled: true
+            autoban: true
+            punish-vl: 20
+            mode: BAN
+            banwave: false
+            banwave-vl: 10
+        E:
+            enabled: true
+            autoban: true
+            punish-vl: 20
+            mode: BAN
+            banwave: false
+            banwave-vl: 10
+        F:
+            enabled: true
+            autoban: true
+            punish-vl: 30
+            mode: KICK
+            banwave: false
+            banwave-vl: 10
+        G:
+            enabled: true
+            autoban: true
+            punish-vl: 30
+            mode: KICK
+            banwave: false
+            banwave-vl: 10
+        M:
+            enabled: false
+            autoban: false
+            punish-vl: 30
+            mode: KICK
+            banwave: false
+            banwave-vl: 10
+        I:
+            enabled: true
+            autoban: true
+            punish-vl: 20
+            mode: BAN
+            banwave: false
+            banwave-vl: 10
+        J:
+            enabled: false
+            autoban: false
+            punish-vl: 30
+            mode: KICK
+            banwave: false
+            banwave-vl: 10
+        N:
+            enabled: false
+            autoban: false
+            punish-vl: 30
+            mode: KICK
+            banwave: false
+            banwave-vl: 10
+        H:
+            enabled: true
+            autoban: true
+            punish-vl: 20
+            mode: BAN
+            banwave: false
+            banwave-vl: 10
+    Killaura:
+        A:
+            enabled: true
+            autoban: true
+            punish-vl: 20
+            mode: BAN
+            banwave: false
+            banwave-vl: 10
+        B:
+            enabled: true
+            autoban: true
+            punish-vl: 20
+            mode: BAN
+            banwave: false
+            banwave-vl: 10
+        C:
+            enabled: true
+            autoban: true
+            punish-vl: 30
+            mode: KICK
+            banwave: false
+            banwave-vl: 10
+        D:
+            enabled: true
+            autoban: true
+        E:
+            enabled: true
+            autoban: true
+            punish-vl: 20
+            mode: BAN
+            banwave: false
+            banwave-vl: 10
+        F:
+            enabled: true
+            autoban: true
+            punish-vl: 20
+            mode: BAN
+            banwave: false
+            banwave-vl: 10
+        G:
+            enabled: true
+            autoban: true
+            punish-vl: 20
+            mode: BAN
+            banwave: false
+            banwave-vl: 10
+        I:
+            enabled: true
+            autoban: true
+            punish-vl: 20
+            mode: BAN
+            banwave: false
+            banwave-vl: 10
+        J:
+            enabled: true
+            autoban: true
+            punish-vl: 20
+            mode: BAN
+            banwave: false
+            banwave-vl: 10
+        K:
+            enabled: true
+            autoban: true
+            punish-vl: 20
+            mode: BAN
+            banwave: false
+            banwave-vl: 10
+        N:
+            enabled: false
+            autoban: false
+            punish-vl: 30
+            mode: KICK
+            banwave: false
+            banwave-vl: 10
+        M:
+            enabled: false
+            autoban: false
+            punish-vl: 30
+            mode: KICK
+            banwave: false
+            banwave-vl: 10
+        H:
+            enabled: true
+            autoban: true
+            punish-vl: 20
+            mode: BAN
+            banwave: false
+            banwave-vl: 10
+    Hitbox:
+        A:
+            cancel-out-box-hits: false
+            enabled: true
+            autoban: true
+            punish-vl: 20
+            mode: BAN
+            banwave: false
+            banwave-vl: 10
+    Analysis:
+        E:
+            enabled: false
+            autoban: false
+            punish-vl: 30
+            mode: KICK
+            banwave: false
+            banwave-vl: 10
+        C:
+            enabled: false
+            autoban: false
+            punish-vl: 30
+            mode: KICK
+            banwave: false
+            banwave-vl: 10
+        B:
+            enabled: false
+            autoban: false
+            punish-vl: 30
+            mode: KICK
+            banwave: false
+            banwave-vl: 10
+        D:
+            enabled: false
+            autoban: false
+            punish-vl: 30
+            mode: KICK
+            banwave: false
+            banwave-vl: 10
+        A:
+            enabled: true
+            autoban: true
+            punish-vl: 20
+            mode: BAN
+            banwave: false
+            banwave-vl: 10
 MOVEMENT:
-  Fly:
-    A:
-      enabled: true
-      autoban: true
-    B:
-      enabled: true
-      autoban: true
-    C:
-      enabled: true
-      autoban: true
-  Move:
-    A:
-      enabled: true
-      autoban: true
-  Motion:
-    A:
-      enabled: true
-      autoban: true
-    B:
-      enabled: true
-      autoban: true
-    C:
-      enabled: true
-      autoban: true
-    D:
-      enabled: true
-      autoban: true
-  OmniSprint:
-    A:
-      enabled: true
-      autoban: true
-  Speed:
-    A:
-      enabled: true
-      autoban: true
+    Fly:
+        A:
+            enabled: true
+            autoban: true
+            punish-vl: 20
+            mode: BAN
+            banwave: false
+            banwave-vl: 10
+        B:
+            enabled: true
+            autoban: true
+            punish-vl: 20
+            mode: BAN
+            banwave: false
+            banwave-vl: 10
+        C:
+            enabled: true
+            autoban: true
+            punish-vl: 20
+            mode: BAN
+            banwave: false
+            banwave-vl: 10
+        F:
+            enabled: true
+            autoban: true
+            punish-vl: 20
+            mode: BAN
+            banwave: false
+            banwave-vl: 10
+        E:
+            enabled: false
+            autoban: false
+            punish-vl: 30
+            mode: KICK
+            banwave: false
+            banwave-vl: 10
+        D:
+            enabled: false
+            autoban: false
+            punish-vl: 30
+            mode: KICK
+            banwave: false
+            banwave-vl: 10
+    Motion:
+        A:
+            enabled: true
+            autoban: true
+            punish-vl: 20
+            mode: BAN
+            banwave: false
+            banwave-vl: 10
+        B:
+            enabled: true
+            autoban: true
+            punish-vl: 20
+            mode: BAN
+            banwave: false
+            banwave-vl: 10
+        C:
+            enabled: true
+            autoban: true
+            punish-vl: 20
+            mode: BAN
+            banwave: false
+            banwave-vl: 10
+        D:
+            enabled: true
+            autoban: true
+            punish-vl: 30
+            mode: KICK
+            banwave: false
+            banwave-vl: 10
+        I:
+            enabled: false
+            autoban: false
+            punish-vl: 30
+            mode: KICK
+            banwave: false
+            banwave-vl: 10
+        E:
+            enabled: true
+            autoban: true
+            punish-vl: 20
+            mode: BAN
+            banwave: false
+            banwave-vl: 10
+        J:
+            enabled: false
+            autoban: false
+            punish-vl: 30
+            mode: KICK
+            banwave: false
+            banwave-vl: 10
+        F:
+            enabled: false
+            autoban: false
+            punish-vl: 30
+            mode: KICK
+            banwave: false
+            banwave-vl: 10
+    OmniSprint:
+        A:
+            enabled: true
+            autoban: true
+            punish-vl: 30
+            mode: KICK
+            banwave: false
+            banwave-vl: 10
+    Speed:
+        A:
+            enabled: true
+            autoban: true
+            fix-noslow-eat-shoot-glitch: false
+            detect-noslow: false
+            detect-noweb: false
+            punish-vl: 20
+            mode: BAN
+            banwave: false
+            banwave-vl: 10
+        B:
+            enabled: true
+            autoban: true
+            punish-vl: 20
+            mode: BAN
+            banwave: false
+            banwave-vl: 10
+        C:
+            enabled: true
+            autoban: true
+            punish-vl: 20
+            mode: BAN
+            banwave: false
+            banwave-vl: 10
+    Inventory:
+        B:
+            enabled: false
+            autoban: false
+            punish-vl: 30
+            mode: KICK
+            banwave: false
+            banwave-vl: 10
+        A:
+            enabled: false
+            autoban: false
+            punish-vl: 30
+            mode: KICK
+            banwave: false
+            banwave-vl: 10
+        C:
+            enabled: false
+            autoban: false
+            punish-vl: 30
+            mode: KICK
+            banwave: false
+            banwave-vl: 10
+    VehicleFly:
+        A:
+            enabled: false
+            autoban: false
+            punish-vl: 30
+            mode: KICK
+            banwave: false
+            banwave-vl: 10
+    Jesus:
+        A:
+            enabled: false
+            autoban: false
+            punish-vl: 30
+            mode: KICK
+            banwave: false
+            banwave-vl: 10
+        B:
+            enabled: false
+            autoban: false
+            punish-vl: 30
+            mode: KICK
+            banwave: false
+            banwave-vl: 10
+    Step:
+        A:
+            enabled: true
+            autoban: true
+            punish-vl: 20
+            mode: BAN
+            banwave: false
+            banwave-vl: 10
 PACKET:
-  BadPackets:
-    A:
-      enabled: true
-      autoban: true
-    B:
-      enabled: true
-      autoban: true
-    C:
-      enabled: true
-      autoban: true
-    D:
-      enabled: true
-      autoban: true
-    E:
-      enabled: true
-      autoban: true
-    F:
-      enabled: true
-      autoban: true
-  Timer:
-    A:
-      enabled: true
-      autoban: true
+    BadPackets:
+        A:
+            enabled: true
+            autoban: true
+            punish-vl: 20
+            mode: BAN
+            banwave: false
+            banwave-vl: 10
+        B:
+            enabled: true
+            autoban: true
+            punish-vl: 20
+            mode: BAN
+            banwave: false
+            banwave-vl: 10
+        C:
+            enabled: true
+            autoban: true
+            punish-vl: 20
+            mode: BAN
+            banwave: false
+            banwave-vl: 10
+        D:
+            enabled: true
+            autoban: true
+            punish-vl: 20
+            mode: BAN
+            banwave: false
+            banwave-vl: 10
+        E:
+            enabled: true
+            autoban: true
+            punish-vl: 20
+            mode: BAN
+            banwave: false
+            banwave-vl: 10
+        F:
+            enabled: true
+            autoban: true
+            punish-vl: 20
+            mode: BAN
+            banwave: false
+            banwave-vl: 10
+        Q:
+            enabled: true
+            autoban: true
+            punish-vl: 20
+            mode: BAN
+            banwave: false
+            banwave-vl: 10
+        R:
+            enabled: true
+            autoban: true
+            punish-vl: 20
+            mode: BAN
+            banwave: false
+            banwave-vl: 10
+        L:
+            enabled: true
+            autoban: true
+            punish-vl: 20
+            mode: BAN
+            banwave: false
+            banwave-vl: 10
+        K:
+            enabled: false
+            autoban: false
+            punish-vl: 30
+            mode: KICK
+            banwave: false
+            banwave-vl: 10
+        G:
+            enabled: true
+            autoban: true
+            punish-vl: 20
+            mode: BAN
+            banwave: false
+            banwave-vl: 10
+        N:
+            enabled: false
+            autoban: false
+            punish-vl: 30
+            mode: KICK
+            banwave: false
+            banwave-vl: 10
+        M:
+            enabled: false
+            autoban: false
+            punish-vl: 30
+            mode: KICK
+            banwave: false
+            banwave-vl: 10
+        O:
+            enabled: true
+            autoban: true
+            punish-vl: 20
+            mode: BAN
+            banwave: false
+            banwave-vl: 10
+        H:
+            enabled: true
+            autoban: true
+            punish-vl: 20
+            mode: BAN
+            banwave: false
+            banwave-vl: 10
+        P:
+            enabled: true
+            autoban: true
+            punish-vl: 20
+            mode: BAN
+            banwave: false
+            banwave-vl: 10
+        I:
+            enabled: false
+            autoban: false
+            punish-vl: 30
+            mode: KICK
+            banwave: false
+            banwave-vl: 10
+        J:
+            enabled: true
+            autoban: true
+            punish-vl: 20
+            mode: BAN
+            banwave: false
+            banwave-vl: 10
+    Timer:
+        A:
+            enabled: true
+            autoban: true
+            cap: 10000
+            punish-vl: 20
+            mode: BAN
+            banwave: false
+            banwave-vl: 10
+        B:
+            enabled: true
+            autoban: true
+            punish-vl: 20
+            mode: BAN
+            banwave: false
+            banwave-vl: 10
+        C:
+            enabled: false
+            autoban: false
+            punish-vl: 30
+            mode: KICK
+            banwave: false
+            banwave-vl: 10
+    Ping:
+        A:
+            enabled: false
+            autoban: false
+            punish-vl: 30
+            mode: KICK
+            banwave: false
+            banwave-vl: 10
 WORLD:
-  Ground:
-    A:
-      enabled: true
-      autoban: true
-    B:
-      enabled: true
-      autoban: true
-  Scaffold:
-    A:
-      enabled: true
-      autoban: true
-    B:
-      enabled: true
-      autoban: true
-    C:
-      enabled: true
-      autoban: true
-    D:
-      enabled: true
-      autoban: true
+    Ground:
+        A:
+            enabled: true
+            autoban: true
+            punish-vl: 20
+            mode: BAN
+            banwave: false
+            banwave-vl: 10
+        B:
+            enabled: true
+            autoban: true
+            punish-vl: 20
+            mode: BAN
+            banwave: false
+            banwave-vl: 10
+        C:
+            enabled: true
+            autoban: true
+            punish-vl: 20
+            mode: BAN
+            banwave: false
+            banwave-vl: 10
+    Scaffold:
+        A:
+            enabled: true
+            autoban: true
+            punish-vl: 20
+            mode: BAN
+            banwave: false
+            banwave-vl: 10
+        B:
+            enabled: true
+            autoban: true
+            punish-vl: 20
+            mode: BAN
+            banwave: false
+            banwave-vl: 10
+        C:
+            enabled: true
+            autoban: true
+            punish-vl: 20
+            mode: BAN
+            banwave: false
+            banwave-vl: 10
+        D:
+            enabled: true
+            autoban: true
+            punish-vl: 20
+            mode: BAN
+            banwave: false
+            banwave-vl: 10
+        P:
+            enabled: true
+            autoban: true
+            punish-vl: 20
+            mode: BAN
+            banwave: false
+            banwave-vl: 10
+        I:
+            enabled: false
+            autoban: false
+            punish-vl: 30
+            mode: KICK
+            banwave: false
+            banwave-vl: 10
+        H:
+            enabled: true
+            autoban: true
+            punish-vl: 20
+            mode: BAN
+            banwave: false
+            banwave-vl: 10
+        N:
+            enabled: false
+            autoban: false
+            punish-vl: 30
+            mode: KICK
+            banwave: false
+            banwave-vl: 10
+        M:
+            enabled: false
+            autoban: false
+            punish-vl: 30
+            mode: KICK
+            banwave: false
+            banwave-vl: 10
+        O:
+            enabled: false
+            autoban: false
+            punish-vl: 30
+            mode: KICK
+            banwave: false
+            banwave-vl: 10
+        Q:
+            enabled: false
+            autoban: false
+            punish-vl: 30
+            mode: KICK
+            banwave: false
+            banwave-vl: 10
+        G:
+            enabled: false
+            autoban: false
+            punish-vl: 30
+            mode: KICK
+            banwave: false
+            banwave-vl: 10
+        J:
+            enabled: false
+            autoban: false
+            punish-vl: 30
+            mode: KICK
+            banwave: false
+            banwave-vl: 10
+        K:
+            enabled: false
+            autoban: false
+            punish-vl: 30
+            mode: KICK
+            banwave: false
+            banwave-vl: 10
+        R:
+            enabled: true
+            autoban: true
+            punish-vl: 20
+            mode: BAN
+            banwave: false
+            banwave-vl: 10
+        L:
+            enabled: false
+            autoban: false
+            punish-vl: 30
+            mode: KICK
+            banwave: false
+            banwave-vl: 10
+        F:
+            enabled: false
+            autoban: false
+            punish-vl: 30
+            mode: KICK
+            banwave: false
+            banwave-vl: 10
+        E:
+            enabled: true
+            autoban: true
+            punish-vl: 20
+            mode: BAN
+            banwave: false
+            banwave-vl: 10
+    NoLookBreak:
+        A:
+            enabled: false
+            autoban: false
+            punish-vl: 30
+            mode: KICK
+            banwave: false
+            banwave-vl: 10
+    BlockReach:
+        A:
+            enabled: false
+            autoban: false
+            punish-vl: 30
+            mode: KICK
+            banwave: false
+            banwave-vl: 10
+    FastBreak:
+        B:
+            enabled: true
+            autoban: true
+            punish-vl: 20
+            mode: BAN
+            banwave: false
+            banwave-vl: 10
+        C:
+            enabled: true
+            autoban: true
+            punish-vl: 20
+            mode: BAN
+            banwave: false
+            banwave-vl: 10
+        A:
+            enabled: true
+            autoban: true
+            punish-vl: 20
+            mode: BAN
+            banwave: false
+            banwave-vl: 10
+    GhostBreak:
+        A:
+            enabled: true
+            autoban: true
+            punish-vl: 20
+            mode: BAN
+            banwave: false
+            banwave-vl: 10
