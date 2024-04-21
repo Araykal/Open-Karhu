@@ -35,7 +35,7 @@ import org.bukkit.Bukkit;
 
 public class MongoStorage implements Storage {
 	private final CodecRegistry pojoCodecRegistry = CodecRegistries.fromRegistries(
-            MongoClient.getDefaultCodecRegistry(), CodecRegistries.fromProviders(PojoCodecProvider.builder().automatic(true).build()));
+			MongoClient.getDefaultCodecRegistry(), CodecRegistries.fromProviders(PojoCodecProvider.builder().automatic(true).build()));
 	private MongoCollection<ViolationX> loggedViolations;
 	private MongoCollection<BanX> loggedBans;
 	private MongoCollection<AlertsX> loggedStatus;
@@ -65,7 +65,9 @@ public class MongoStorage implements Storage {
 		MongoClient client;
 		if (this.auth) {
 			MongoCredential credentials = MongoCredential.createCredential(this.username, this.database, this.password.toCharArray());
-			client = new MongoClient(new ServerAddress(this.host, this.port), credentials, MongoClientOptions.builder().codecRegistry(this.pojoCodecRegistry).build());
+			client = new MongoClient(
+					new ServerAddress(this.host, this.port), credentials, MongoClientOptions.builder().codecRegistry(this.pojoCodecRegistry).build()
+			);
 		} else {
 			client = new MongoClient(new ServerAddress(this.host, this.port), MongoClientOptions.builder().codecRegistry(this.pojoCodecRegistry).build());
 		}
@@ -76,7 +78,7 @@ public class MongoStorage implements Storage {
 		this.loggedStatus = mongodb.getCollection("status", AlertsX.class);
 		this.loggedBanwavePlayers = mongodb.getCollection("banwave", BanWaveX.class);
 		new Thread(() -> {
-			while (Karhu.getInstance() != null && Karhu.getInstance().getPlug().isEnabled()) {
+			while(Karhu.getInstance() != null && Karhu.getInstance().getPlug().isEnabled()) {
 				try {
 					NetUtil.sleep(10000L);
 					if (!this.violations.isEmpty() || !this.bans.isEmpty() || !this.banWaveQueue.isEmpty()) {
@@ -93,8 +95,8 @@ public class MongoStorage implements Storage {
 						if (!this.bans.isEmpty()) {
 							try {
 								this.loggedBans.insertMany(new ArrayList<>(this.bans));
-							} catch (Exception var3x) {
-								var3x.printStackTrace();
+							} catch (Exception var3xx) {
+								var3xx.printStackTrace();
 							}
 
 							this.bans.clear();
@@ -103,8 +105,8 @@ public class MongoStorage implements Storage {
 						if (!this.banWaveQueue.isEmpty()) {
 							try {
 								this.loggedBanwavePlayers.insertMany(new ArrayList<>(this.banWaveQueue));
-							} catch (Exception var2x) {
-								var2x.printStackTrace();
+							} catch (Exception var2xx) {
+								var2xx.printStackTrace();
 							}
 
 							this.banWaveQueue.clear();
@@ -134,7 +136,7 @@ public class MongoStorage implements Storage {
 
 	@Override
 	public boolean getAlerts(String uuid) {
-		AlertsX alertsX = (AlertsX)this.loggedStatus.find(Filters.eq("player", uuid)).limit(1).first();
+		AlertsX alertsX = this.loggedStatus.find(Filters.eq("player", uuid)).limit(1).first();
 		if (alertsX != null) {
 			return MathUtil.getIntAsBoolean(alertsX.status);
 		} else {
@@ -150,7 +152,7 @@ public class MongoStorage implements Storage {
 			Map<String, Integer> validVls = new HashMap<>();
 			this.loggedViolations.find(Filters.eq("player", uuid)).sort(new Document("time", -1)).forEach((Block<? super ViolationX>) vx -> violations.add(vx));
 
-			for (ViolationX v : violations) {
+			for(ViolationX v : violations) {
 				if (System.currentTimeMillis() - v.time < 200000L) {
 					if (!validVls.containsKey(v.type)) {
 						validVls.put(v.type, v.vl);
@@ -160,7 +162,7 @@ public class MongoStorage implements Storage {
 				}
 			}
 
-			for (Check c : data.getCheckManager().getChecks()) {
+			for(Check c : data.getCheckManager().getChecks()) {
 				if (validVls.containsKey(c.getCheckInfo().name())) {
 					data.addViolations(c, validVls.get(c.getName()));
 					int vl = data.getViolations(c, 100000L);
@@ -239,25 +241,5 @@ public class MongoStorage implements Storage {
 		this.loggedBanwavePlayers.findOneAndDelete(Filters.eq("player", uuid));
 	}
 
-	@Override
-	public void checkFiles() {
-		try {
-			String acname = Karhu.getInstance().getConfigManager().getLicense().equals(" ") ? "VengeanceLoader" : "KarhuLoader";
-			if (Bukkit.getServer().getPluginManager().isPluginEnabled(acname)) {
-				if (NetUtil.accessFile() != 0) {
-					Karhu.getInstance().getPlug().getLogger().warning("java.lang.reflect.InvocationTargetException");
-					Karhu.getInstance().getPlug().getLogger().warning("at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)");
-					Karhu.getInstance().getPlug().getLogger().warning("at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)");
-					Karhu.getInstance().getPlug().getLogger().warning("at java.lang.reflect.Method.invoke(Method.java:498)");
-					Karhu.getInstance().getPlug().getLogger().warning("at java.lang.invoke.MethodHandleImpl$BindCaller$T/1328599947.invoke_V(MethodHandleImpl.java:1258)");
-					Karhu.getInstance().getPlug().getLogger().warning("at io.github.retrooper.packetevents.event.manager.EventManager.callEvent(EventManager.java:60)");
-					Karhu.getInstance().getPlug().getLogger().warning("... 65 more");
-					Bukkit.shutdown();
-				}
-			} else {
-				Bukkit.shutdown();
-			}
-		} catch (Exception var2) {
-		}
-	}
+
 }

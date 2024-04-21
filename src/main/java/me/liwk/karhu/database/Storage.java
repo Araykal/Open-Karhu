@@ -41,7 +41,6 @@ public interface Storage {
 
 	List<BanX> getRecentBans();
 
-	void checkFiles();
 
 	void setAlerts(String string, int integer);
 

@@ -173,7 +173,6 @@ public final class Karhu extends JavaPlugin {
 					this.printCool("&b> &fMongo initialized");
 					break;
 				case "mysql":
-					MySQL.init();
 					storage = new MySQLStorage();
 					this.printCool("&b> &fMySQL initialized");
 					break;
